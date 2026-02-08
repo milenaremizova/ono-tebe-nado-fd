@@ -34,5 +34,19 @@ img {
 }
 
 button {
+  border: none;
+  background: none;
   font: inherit;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ul {
+  list-style: none;
 }
