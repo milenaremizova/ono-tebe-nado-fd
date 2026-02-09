@@ -26,6 +26,7 @@
   list-style: circle;
 }
 
+/* убрать маркер списка у первого раздела в меню*/
 .header__links-list-item:first-child {
   list-style: none;
 }
@@ -37,7 +38,6 @@
 .header__address {
   max-width: 240px;
   justify-self: end;
-  line-height: 24px;
 }
 
 .cover {
@@ -59,14 +59,14 @@
 .cover__title {
   text-transform: uppercase;
   font-size: 100px;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
-  padding: 169px 20px 106px 50px
+  padding: 169px 20px 106px 50px;
 }
 
 .cover__title span {
   display: block;
-  line-height: 114px;
+  line-height: 1.14;
 }
 
 .aligned-text {
@@ -94,12 +94,12 @@
 .cover__description {
   font-size: 22px;
   font-style: normal;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
 }
 
 .cover__description-text {
-  line-height: 22px;
+  line-height: 1.2;
   padding: 15px 100px 0px 50px;
   display: inline-block;
 }
@@ -111,11 +111,11 @@
 .cover__bet-button {
   font-size: 22px;
   font-weight: normal;
-  line-height: 1em;
+  line-height: 1;
   text-transform: uppercase;
   display: inline-block;
   padding: 12px 31px 12px 31px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   background: transparent;
 }
 
@@ -125,12 +125,11 @@
 
 .lots__heading {
   padding: 0 0px 31px 40px;
-  line-height: 0.9em;
+  line-height: 0.9;
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
-
 }
 
 .lots__card-list {
@@ -143,6 +142,7 @@
 .lots__card-list-item {
   width: 334px;
   min-height: 596px;
+  line-height: 1.2;
 }
 
 .card-link {
@@ -153,7 +153,7 @@
 .card {
   position: relative;
   height: 100%;
-} 
+}
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
@@ -176,8 +176,7 @@
 .card__title {
   font-size: 22px;
   font-weight: bold;
-  line-height: 1.2em;
-  color: #FFF;
+  color: #fff;
   padding: 48px 40px 0 40px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -186,8 +185,7 @@
 .card__text {
   font-size: 20px;
   font-weight: normal;
-  line-height: 1.2em;
-  color: #FFF;
+  color: #fff;
   padding: 0px 40px 48px 40px;
 }
 
@@ -212,8 +210,87 @@
   padding: 34px 0 0 41px;
 }
 
+.about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  grid-template-rows: 596px auto;
+  padding: 0 24px 180px 24px;
+}
 
+.about__column_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 35px;
+}
 
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
 
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
 
+.about__title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 0.01;
+  text-transform: uppercase;
+  padding: 160px 0 123px 24px;
+}
 
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 0 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 50px 82px 50px;
+}
+
+.footer__address {
+  max-width: 264px;
+}
+
+.footer__menu-list {
+  line-height: 1.21;
+}
+
+.footer__menu-list-item {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+/* расположить иконки социальных сетей в ряд */
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 48px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
